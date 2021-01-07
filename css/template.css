@@ -11,9 +11,7 @@ body {
   grid-template:
     "header header header header header" auto
     "slide  slide  slide  slide  slide " auto
-    "...... ...... ...... ...... ......" 20px
-    "...... title  title  title  ......" auto
-    "...... ...... ...... ...... ......" 20px
+    "...... ...... ...... ...... ......" 10px
     "...... left   center right  ......" auto
     "...... ...... ...... ...... ......" 20px
     "footer footer footer footer footer" auto
@@ -37,31 +35,22 @@ header img{
 
 main {
   grid-area: center;
-  /* background-color: blue; */
   min-width: 500px;
   min-height: 600px;
 }
 
 div.slide {
   grid-area: slide;  
-  /* background-color: pink; */
-}
-
-div.kyatti {
-  grid-area: title;
-  /* background-color: #f814e5 ; */
 }
 
 nav {
   grid-area: left;
-  /* background-color: yellow; */
   max-width: 400px;
   min-width: 300px;
   }
 
 aside {
   grid-area: right;
-  /* background-color: green; */
 max-width: 400px;
 min-width: 300px;
 }
@@ -82,8 +71,6 @@ footer hr {
     grid-template: 
     "header header header" 56px 
     "slide  slide  slide " auto
-    "...... ...... ......" 10px 
-    "...... title  ......" 100px 
     "...... ...... ......" 20px 
     "...... center ......" auto 
     "...... left   ......" 

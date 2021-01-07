@@ -27,44 +27,27 @@
   <!-- コンテンツ -->
     <!-- 仕事 -->
     <main class="">
-      <div class="m-3 p-3 bg-light shadow-sm rounded">
-        <p>
-          仕事内容
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </p>
-      </div>
+        <div class="text-center">
+            <h1>ログイン</h1>
+            <p>会員情報を入力してください</p>
+        </div>
+        <!--登録フォーム-->
+        <form name="myform" action="signin.html" onsubmit="return check()">
+            <div class="m-2 p-2">
+                <label class="float-left">メールアドレス</label>
+                <input type="mail" class="form-control" name="address" placeholder="アドレスを入力して下さい。">
+            </div>
 
-      <!--ボタンのグループ化-->
-      <div class="btn-group-lg text-center">
-        <input
-          type="submit"
-          class="p-2 btn btn-primary"
-          name="submit"
-          value="応募する"
-        />
-        <input
-          type="submit"
-          class="p-2 btn btn-primary"
-          name="submit"
-          value="キャンセル"
-        />
-      </div>
+            <div class="m-2 p-2">
+                <label class="float-left">パスワード</label>
+                <input type="password" class="form-control" name="pass" placeholder="パスワードを入力して下さい。">
+            </div>
+
+            <div class="text-center m-3">
+                <button type="submit" class="btn btn-primary">決定</button>
+            </div>
+        </form>
     </main>
-    <!-- 広告-->
-    <aside class="">
-      <div class="m-3 p-3 bg-light shadow-sm rounded">
-        <p>広告</p>
-      </div>
-    </aside>
-
     <!--フッター-->
     <footer class="text-white bg-dark">
       <br />
