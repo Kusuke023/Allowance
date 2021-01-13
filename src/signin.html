@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>応募画面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./../css/template.css" />
+  </head>
+
+  <body>
+    <!--ヘッダー-->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <img src="./../img/13.png" alt="" class="rounded-circle">
+      <a href="index.html" class="mr-auto navbar-brand nav-link">
+          <img src="./../img/Askisst.png" alt="">
+      </a>
+      <div class="pull-right">
+          <a href="signup.html" class="navbar-brand nav-link">
+              signup
+          </a>
+          <a href="signin.html" class="navbar-brand nav-link">
+              signin
+          </a>
+      </div>
+  </header>
+  <!-- コンテンツ -->
+    <!-- 仕事 -->
+    <main class="">
+        <div class="text-center">
+            <h1>ログイン</h1>
+            <p>会員情報を入力してください</p>
+        </div>
+        <!--登録フォーム-->
+        <form name="myform" action="signin.html" onsubmit="return check()">
+            <div class="m-2 p-2">
+                <label class="float-left">メールアドレス</label>
+                <input type="mail" class="form-control" name="address" placeholder="アドレスを入力して下さい。">
+            </div>
+
+            <div class="m-2 p-2">
+                <label class="float-left">パスワード</label>
+                <input type="password" class="form-control" name="pass" placeholder="パスワードを入力して下さい。">
+            </div>
+
+            <div class="text-center m-3">
+                <button type="submit" class="btn btn-primary">決定</button>
+            </div>
+        </form>
+    </main>
+    <!--フッター-->
+    <footer class="text-white bg-dark">
+      <br />
+      <hr />
+      <div class="m-0 p-2 text-center">
+        <a href="inquiry.html" class="text-white col-auto">お問い合わせ</a>
+        <a href="#" class="text-white col-auto">広告掲載依頼</a>
+        <a href="kiyaku.html" class="text-white col-auto">利用規約</a>
+        <br />
+        <br />
+        <a href="pr.html" class="text-white col-auto">プライバシーポリシー</a>
+      </div>
+      <hr />
+      <div class="pb-2 text-center">
+        <small> Copyright © 2020 Askisst All Rights Reserved. </small>
+      </div>
+    </footer>
+  </body>
+</html>
