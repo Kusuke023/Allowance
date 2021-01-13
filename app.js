@@ -1,28 +1,45 @@
-const express = require("express");
-const mysql = require("mysql");
+// const express = require("express");
+// const app = express();
 
-const app = express();
+// // app.get("/", (req, res) => {
+// //   res.status(200).send("Hwllo World.");
+// // });
+// app.use("/user", require("user.js"));
 
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "list_app",
-});
+// app.listen(3000);
 
-connection.connect((err) => {
-  if (err) {
-    console.log("error connecting: " + err.stack);
-    return;
-  }
-  console.log("success");
-});
+// var express = require("express");
+// var app = express();
 
-app.get("/", (req, res) => {
-  connection.query("SELECT * FROM users", (error, results) => {
-    console.log(results);
-    res.render("hello.ejs");
-  });
-});
+// app.get("/user", require("user.js"));
+
+// app.listen(3000);
+
+// var router = require("express").Router();
+
+// router.use((req, res, next) => {
+//   console.log((new DataCue()).toISOString());
+//   next();
+// });
+
+// router.get("/", (req, res) => {
+//   res.send("/");
+// });
+
+// router.get("/about", (req, res) => {
+//   res.send("/about");
+// });
+
+// module.exports = router;
+
+var express = require("express");
+var app = express();
+
+// app.get("/user/:id", (req, res) => {
+//     console.log(req.params.id);
+//   res.status(200).send("OK");
+// });
+
+app.use("/user", require("./user.js"));
 
 app.listen(3000);
